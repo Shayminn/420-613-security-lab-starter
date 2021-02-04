@@ -34,7 +34,8 @@ namespace SecurityLab1_Starter.Controllers
 
         public ActionResult GenError()
         {
-            return new HttpStatusCodeResult(500);
+            throw new HttpException();
+            //throw new Exception();
         }
     }
 }
